@@ -53,13 +53,21 @@ print(ogrencilerB)
 #listeden eleman silme metodu remove()
 
 ogrencilerA.remove("AYŞE") #listeden AYŞE ismini siler
-print()
+print(ogrencilerA)
 
 
+#discard() metodu aslında remove () metodu ile aynı işlevdedir. Liste'den eleman siler ama fark şudur
+#remove() metodu eğer listede olmayan bir elemanı silmek istersek throw an error bir hata fırlatır ama remove() metodu bir hata fırlatmaz ama herhangi bir işlem de yapmaz
 
+ogrencilerA.discard("HAYRİYE") #hayriye silindi
+print(ogrencilerA)
 
+#pop() metodu listeden eleman siler ama hangi elemanı silecek bilemeyiz normalde
+#indexleme yapılan lsitelerde direk sondaki elemanı siler ama sets'de liste her run zamanında karışık listelendiği için bizim bilmediğimiz
+#ama o anda sona düşen elemanı siler.
 
+ogrencilerB.pop() #mesela ilk çalıştırmada NAZLI SİLİDNİ ÇÜNKÜ O SIRALAMDA NAZLI LİSTENİN SONUNDAYDI VE POP() METODU LİSTENİN SONUNDAKİNİ SİLER AMA EĞER BİR DAHA ÇALIŞTIRIRSSAK BU SEFER BİLMEDİĞİMİZ BAŞKA BİR İSMİ SİLER
+print(ogrencilerB)
 
-
-
-
+ogrencilerA.clear() #ogrencilerA listesini tamamen siler.
+print(ogrencilerA)
