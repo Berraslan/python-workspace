@@ -3,7 +3,7 @@
 #aynı keyler birden fazla kullanılamaz
 
 
-#dictionary kullanmadan zahmetli hal ( yapamk istediğimiz işlem İstanbul verisi verildiği zaman 34 döndürmesi)
+#dictionary kullanmadan zahmetli hal ( yapmak istediğimiz işlem İstanbul verisi verildiği zaman 34 döndürmesi)
 sehirler = ['Kocaeli','Istanbul']
 plakalar1 = [41,34]
 
@@ -13,7 +13,7 @@ print(plakalar1[sehirler.index('Istanbul')]) #sehirler listesinden index metdou 
 #dictionary ile kolay yol
 #{'key':value}
 
-plakalar={'Kocaeli':41,
+plakalar={'Kocaeli':41 ,
 
           'Istanbul':34,
 

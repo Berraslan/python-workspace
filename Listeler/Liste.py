@@ -29,4 +29,11 @@ print(toplam)
 
 print(type(ogrenciler[0][3])) #öğrenciler listeninde 0.elemanın içindeki listenin içindeki 3.indisin tipini
 
-print()
+
+sayi1= int(input("Sayı gininiz : "))
+sayi2= int(input("Sayı gininiz : "))
+sayi3 = int(input("Sayı gininiz :"))
+toplam = sayi1+sayi2+sayi3
+ortalama = toplam/3
+
+print(f"1.sayı : {sayi1} -  2.sayı: {sayi2} ve -  3.say: {sayi3} -  toplam : {toplam} ortalama: {ortalama} 'dır. ")

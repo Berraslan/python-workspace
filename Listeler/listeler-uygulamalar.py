@@ -37,7 +37,7 @@ print(brand)
 #öğrenci2: Ada Bilgi 2012 [70,70,80]
 #öğrenci3: Çınar Turan 2017 [60,60,90]
 
-ogrenci1 = ["Yiğit","Bilgili",2010,[70,80,90,100]] #bu bir iç içe listedir yiğit [0], bilgili [1], 2010 [2], [70,80,90] not bilgisi ise [3].elemandır notlar içinde gezmek için ogrenci1[3][0]'demek gerekir bu bizi 3.elemanın 1.elemanına götürür yani 70
+ogrenci1 = ["Yiğit","Bilgili",2010,[70,80,90,100]] #bu bir iç içe listedir yiğit [0], bilgili [1], 2010 [2], [70,80,90] not bilgisi ise [3].elemandır notlar içinde gezmek için ogrenci1[3][0]'demek gerekir bu bizi 3.elemanın 1.elemanına götürür yani 80
 ogrenci2 = ["Ada","Bilgili",2012,[70,70,80]]
 ogrenci3= ["çınar","turan",2017,[60,60,90]]
 

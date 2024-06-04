@@ -1,6 +1,6 @@
 #tuple: bir liste çeşididir. fakat liste'nin sahip olduğu çoğu metodu çalıştıramaz mesela tuple oluşturulduktan sonra eleman silini çıkarılamaz.
 #neden tuple'a gerek duyarız.
-# far edelim ki veritababnından pull işlemi yaptık ve bu pull yaptığımız verileri değiştimicez o zaman kodun çalışma performanısnı arttırmak için
+# farz edelim ki veritababnından pull işlemi yaptık ve bu pull yaptığımız verileri değiştimicez o zaman kodun çalışma performanısnı arttırmak için
 # tuple kullanılır çünkü list yapısın göre daha light'dir.
 
 #veya çektiğiniz verilerin değiştirilmesini yanlışlıkla istemiyorsunuz güvenli bir kod yazmak için de tuple kullanılır.

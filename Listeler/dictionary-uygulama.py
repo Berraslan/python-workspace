@@ -1,5 +1,9 @@
 
-
+#not: ogrenciler burada bizim dictionary liste adımız
+#not : 101,102,103'ler bizim key kısmımızdır.
+#not : key'lere karşılık gelen { } içindeiler ise keylere tekrar dicitonary tanımladık önemli not biz key karşısına value olarak sadece 'string', 'int'  tanımlamayız bu valuelar buradaki gibi dictionary olabilir,list olabilir,tuple olabilir
+#yani key 101'e karşılık gelen istedğiğiniz veri türü olabilir
+# ogrenciler aslında yine bir list'dir ve
 ogrenciler = {
     101 : {
         "Ad" : "Yiğit",
@@ -21,24 +25,18 @@ ogrenciler = {
     },
 }
 
-# ogrenciNo= int(input("Öğrenci numarası giriniz : "))
-#
-# ogrenci = ogrenciler[ogrenciNo]
-# ortalama = (ogrenci["notlar"][0] + ogrenci["notlar"][1] + ogrenci["notlar"][2]) / 3
-#
-# print(f'{ogrenciNo} numaralı {ogrenci["Ad"] } {ogrenci["Soyad"] } ismindeki öğrencinin yaşı {2024 - ogrenci["DogumYili"]} ve not ortlaması {ortalama}')
-#
-# #klavyeden okunan bilgilere göre dictionary'e eleman ekleme
-
-ogrenciName = input("İsim giriniz : ")
-ogrenciSurname = input("Soyad giriniz : ")
-ogrenciBornDate = int(input("Doğum Yılı Giriniz : "))
-ogrenciNote = input("Not Bilgisi Giriniz : ")
+ogrenciNo = input('öğrenci no: ') #klavyeden string tipinde input alıp ogrenciNo değişkeni içinde bu değer saklanır
+ogrenciAcessogrenciler=ogrenciler[int(ogrenciNo)] #ogrenciNo değikeni içinde tutulan sayı değeri ogrenciler listesine parametre olarak verilir ve böylelikle indis gibi düşün klavyeden ogrenciNo 101 girilirse burada ogrenciler[101] keyin içindeki değerler çağırılır ve ogrencilerAcess değişkeni içie atılır
+#ogrenciAcess değişkeni içinde misal 101 iinde tutulan değerler vardır ve biz bu değişkeni kullanarak ve buna parametreler göndererek 'Ad','Soyad' GİBİ BU VERİELRE BU DEĞİŞKEN ÜZERİNDEN ERİŞİRİZ
+#ERİŞİM KAFANI KARIŞTIRMASIN AYNI INDİSLEME GİBİ
 
 
+#klavyeden girilen ögrenci numarasına göre şu cümleyi yazdırın
+#örnek : 101 numaralı Yiğit bilgi öğrenci yaş 14 not ort 70
 
-ogrenciBilgisineUlas = int(input("Öğrenci no : "))
+yasHesapla = 2024-int(ogrenciAcessogrenciler['DogumYili'])
+notAvarage = (ogrenciAcessogrenciler['notlar'][0]+ogrenciAcessogrenciler['notlar'][0]+ogrenciAcessogrenciler['notlar'][0])/3 #ogreciAcessOgrenciler değişkeninden not value eriştik ve oradan da indis değerleini topladık
 
-ogrenci = ogrenciler[ogrenciBilgisineUlas]
+print(f'{ogrenciNo} numaralı {ogrenciAcessogrenciler["Ad"]}   {ogrenciAcessogrenciler["Soyad"]} yaş : {yasHesapla} {ogrenciAcessogrenciler["notlar"]} ortlaması {notAvarage}')
 
-print(f"{ogrenciBilgisineUlas} {'Ad'} , {'Soyad'} , {'DogumYili'}, {'notlar'} ")
+#klavyeden girilen değerlere göre
