@@ -1,0 +1,5 @@
+lower() metodu = bir stringdeki tüm harfleri küçük harflere
+dönüştürmek için kullanılır. Bu metod, string üzerinde değişiklik yapmaz,
+ bunun yerine küçük harflerle yeni bir string döner.
+
+ lower() metodu, özellikle kullanıcıdan alınan verileri karşılaştırırken veya arama yaparken büyük-küçük harf duyarlılığını ortadan kaldırmak için oldukça faydalıdır
