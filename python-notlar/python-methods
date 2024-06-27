@@ -3,3 +3,13 @@ dönüştürmek için kullanılır. Bu metod, string üzerinde değişiklik yapm
  bunun yerine küçük harflerle yeni bir string döner.
 
  lower() metodu, özellikle kullanıcıdan alınan verileri karşılaştırırken veya arama yaparken büyük-küçük harf duyarlılığını ortadan kaldırmak için oldukça faydalıdır
+
+
+ Python'daki random modülü, rastgele sayı üretme ve rastgele seçimler yapma işlevlerini sağlayan bir kütüphanedir. Bu modül, rastgele sayı, rastgele seçim ve karıştırma işlemleri gibi çeşitli rastgelelik gerektiren görevler için kullanılır.
+
+ Kısaca, random modülü şu işlevleri sağlar:
+
+ Rastgele sayı üretme (random.random(), random.randint(a, b))
+ Rastgele eleman seçme (random.choice(seq))
+ Bir listeyi karıştırma (random.shuffle(seq))
+ Belirli bir aralıktan rastgele sayı seçme (random.uniform(a, b))
