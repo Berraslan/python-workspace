@@ -1,0 +1,16 @@
+return : bizim programda geri değer döndüren ve bu değerleri de programın istediğimiz yerinde kullanma yetkimizin olduğu yapıdır
+
+def topla(a, b):
+    return a + b
+
+sonuc = topla(3, 5)  # sonuc değişkeni 8 değerini alır
+print(sonuc)  # Konsolda 8 yazısını görürsünüz
+
+
+
+
+def topla(a, b):
+    toplam a+b
+
+sonuc = topla(3, 5)  # sonuc değişkeni 8 değerini alır
+print(sonuc)  # Konsolda 8 yazısını görürsünüz
