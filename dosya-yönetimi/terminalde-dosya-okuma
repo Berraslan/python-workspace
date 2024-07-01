@@ -1,0 +1,49 @@
+>>> f = open("log.txt",encoding="utf-8")
+>>> print(f.read())
+1.satır
+>>> print(f.read())
+
+2.satır
+>>> print(f.read())
+
+3.satır
+4.satır
+>>> print(f.seek(0)) 
+0
+>>> print(f.read()) 
+1.satır
+2.satır
+3.satır
+4.satır
+>>> f.read()
+''
+>>> f.seek(10) 
+10
+>>> f.read()
+'2.satır\n3.satır\n4.satır'
+>>> f.seek(0) 
+0
+>>> f.readline()
+'1.satır\n'
+>>> f.readline()
+'2.satır\n'
+>>> f.seek(0)                           
+0
+>>> f.readlines() 
+['1.satır\n', '2.satır\n', '3.satır\n', '4.satır']
+>>> f.seek(0) 
+0
+>>> satirlar =f.readlines()
+>>> satirlar[0] 
+'1.satır\n'
+>>> print(satirlar) 
+['1.satır\n', '2.satır\n', '3.satır\n', '4.satır']
+>>> f.close
+<built-in method close of _io.TextIOWrapper object at 0x0000023E398981E0>
+>>> f.read()
+''
+>>> f.close()
+>>> f.read()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: I/O operation on closed file.
