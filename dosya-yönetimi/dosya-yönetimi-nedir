@@ -1,0 +1,18 @@
+Dosya Yönetimi : Uygulama verilerinin kalıcı bir dosya içinde saklanması demektir.
+
+normalde biz programı çalıştırdığımız zaman program bir bellek üzerinde liste'ye vs kaydeydiyor ve program çalışmayı durdurduğunda kaydolan veriler siliniyor
+
+mesela
+
+x="ayşe"
+print(x)
+
+bu kodda ayşe bilgisi bir liste vs saklanıcak program çalıştığı müddetçe ama program durduğu zaman x bilgisi silinecektir
+
+bu derste ;
+
+1-Uygulama verilerini kalıcı saklama
+2-Doysaya veri yazma
+3-dosyaya veri ekleme
+4-dosyadan veri güncelleme
+
