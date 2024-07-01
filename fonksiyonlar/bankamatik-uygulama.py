@@ -49,6 +49,7 @@ accounts = [
         "soyad":"aslan",
         "bakiye":20,
         "ekHesap":1000,
+        "ekHesapLimiti":1000,
         "username":"berra",
         "password":"1234"
     },
@@ -57,11 +58,13 @@ accounts = [
         "soyad":"tur",
         "bakiye":10000,
         "ekHesap":2000,
+        "ekHesapLimiti":2000,
         "username":"ayşe",
         "password":"124334"
     },
 
 ]
+
 
 def menu(hesap): #hesap adında bir parametre alıcaz
     print(f"Merhaba {hesap['ad']}")
@@ -98,7 +101,6 @@ def login():
     if not (isLoggedIn):# eğer username veya password veya ikiside yanlışsa o zaman for'a girmez ve buraya gelir zaten başta false olan IsLoggedIn'in not hali alınır ve TRUE olunca if içi çalışırı ve ekrana hata mesajı kullanıc adı veya şifre der
         print("Kullanıcı adı veya parola yanlış")
 
-
 def bakiye_Sorgula(hesap):
     print(f"{hesap['ad']} adlı müşterimizin {hesap['bakiye']} bakiye bilgisi gösterilmektedir")
     print(f"ek hesap bilgisi :{hesap['ekHesap']}")
@@ -134,20 +136,17 @@ def para_Cek(hesap):
 def para_Yatir(hesap):
     yatirilmakIstenenTutar = int(input("Yatırmak istediğiniz miktarı tuşlayınız: "))
 
-    if hesap['ekHesap'] < 1000:
-        ekHesapLimiti = 1000 - hesap['ekHesap']
+    if hesap['ekHesap'] < hesap['ekHesapLimiti']:
+        ekHesapLimiti = hesap['ekHesapLimiti'] - hesap['ekHesap']
         if yatirilmakIstenenTutar <= ekHesapLimiti:
             hesap['ekHesap'] += yatirilmakIstenenTutar
             print(f"Güncel ek hesap limitiniz {hesap['ekHesap']} ve güncel bakiyeniz {hesap['bakiye']}")
         else:
-            hesap['ekHesap'] = 1000
+            hesap['ekHesap'] = hesap['ekHesapLimiti']
             hesap['bakiye'] += yatirilmakIstenenTutar - ekHesapLimiti
             print(f"Güncel ek hesap limitiniz {hesap['ekHesap']}, güncel bakiyeniz {hesap['bakiye']}")
     else:
         hesap['bakiye'] += yatirilmakIstenenTutar
         print(f"Güncel bakiyeniz {hesap['bakiye']}")
-
-
-
 
 login()
