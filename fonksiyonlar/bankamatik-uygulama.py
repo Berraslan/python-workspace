@@ -131,16 +131,23 @@ def para_Cek(hesap):
             print("Üzgünüz cari hesapta ve ek hesapta gereken limit mevcut değildir")
 
 
-def para_Yatir(hesap,accounts):
-    yatirilmakIstenenTutar= int(input("Yatırmak istediğiniz miktarı tuşlayınız : "))
-    if hesap['ekHesap']==0 and hesap['bakiye']==0:
-        ekHesapLimiti= accounts['ekHesap']
-        hesap['ekHesap'] +=yatirilmakIstenenTutar
-        if hesap['ekHesap'] > ekHesapLimiti:
-            cariHesabaYatirilacakTutar= hesap['ekHesap']-ekHesapLimiti #burada ek hesaba fazladan ne kadar geçmiş onu hesaplıyorz fazla geçeni cari hesaba aktarıcaz
-            hesap['ekHesap']  == ekHesapLimiti #burada ek hesap limiti tutarına sabitliyoruz artık para yatırma işlemi buraya devaö etmicek kalanı cari bakiye'ye aktaraacağız
-            hesap['bakiye'] += cariHesabaYatirilacakTutar
-        else
+def para_Yatir(hesap):
+    yatirilmakIstenenTutar = int(input("Yatırmak istediğiniz miktarı tuşlayınız: "))
+
+    if hesap['ekHesap'] < 1000:
+        ekHesapLimiti = 1000 - hesap['ekHesap']
+        if yatirilmakIstenenTutar <= ekHesapLimiti:
+            hesap['ekHesap'] += yatirilmakIstenenTutar
+            print(f"Güncel ek hesap limitiniz {hesap['ekHesap']} ve güncel bakiyeniz {hesap['bakiye']}")
+        else:
+            hesap['ekHesap'] = 1000
+            hesap['bakiye'] += yatirilmakIstenenTutar - ekHesapLimiti
+            print(f"Güncel ek hesap limitiniz {hesap['ekHesap']}, güncel bakiyeniz {hesap['bakiye']}")
+    else:
+        hesap['bakiye'] += yatirilmakIstenenTutar
+        print(f"Güncel bakiyeniz {hesap['bakiye']}")
+
+
 
 
 login()
