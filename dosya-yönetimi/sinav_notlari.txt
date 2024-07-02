@@ -1,0 +1,4 @@
+berra aslan:100,100,70
+çınar turan:69,70,34
+sadık turan:100,32,4
+ayşe yılmaz:34,67,89

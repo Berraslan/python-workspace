@@ -9,7 +9,7 @@
  """
 
 """open( metodu bize geri dönüş olarak bir obje döndürür io.TextIOWrapper adında ve bu nesnenin üzerinde yapılabilecek işlemler tanımlanabilir kısaca log.txt dosyası bellekte bir obje ile temsil edilir)"""
-f=open("log.txt","r",encoding="utf-8")#encoding ="utf-8 yapmaszak karakterler saçmalar" #open() metodu çalışması için bir değişkene atanmalı çünkü bir değer döndürür ve biz bu değere bu değişken üzerinden erişebiliriz
+f=open("txt/log.txt", "r", encoding="utf-8")#encoding ="utf-8 yapmaszak karakterler saçmalar" #open() metodu çalışması için bir değişkene atanmalı çünkü bir değer döndürür ve biz bu değere bu değişken üzerinden erişebiliriz
 print(f.read()) #bu f değişkeni bir obje tutuyor ve bu objenin sahip olduğu metodlar vardır
 
 

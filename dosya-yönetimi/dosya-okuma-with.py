@@ -2,7 +2,7 @@
 #
 # print(file.read())
 #
-# file.close() #okuma işlemi b,tince dosyayı kapat ki obj iş bitince bellekten silinsin yoksa boş yere yer kaplar
+# file.close() #okuma işlemi bitince dosyayı kapat ki obj iş bitince bellekten silinsin yoksa boş yere yer kaplar
 
 """Yukarıdaki kod normalde open() metodu ile yapılan okuma işlemidir ve mutlaka sonda close() etmeliyiz
 

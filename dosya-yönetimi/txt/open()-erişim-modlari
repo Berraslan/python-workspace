@@ -1,0 +1,46 @@
+# open() Metodunun Temel Erişim Modları ve Özellikleri
+
+1. 'r' - Okuma modu:
+   - Dosyayı okuma amaçlı açar.
+   - Dosya mevcut değilse hata verir.
+   - Örnek: `file = open("dosya.txt", "r", encoding="utf-8")`
+
+2. 'w' - Yazma modu:
+   - Dosyayı yazma amaçlı açar.
+   - Dosya mevcutsa içeriğini siler ve sıfırdan yazar.
+   - Dosya mevcut değilse yeni bir dosya oluşturur.
+   - Örnek: `file = open("dosya.txt", "w", encoding="utf-8")`
+
+3. 'a' - Ekleme modu:
+   - Dosyayı ekleme amaçlı açar.
+   - Dosya mevcut değilse yeni bir dosya oluşturur.
+   - Yazılan veri dosya sonuna eklenir.
+   - Örnek: `file = open("dosya.txt", "a", encoding="utf-8")`
+
+4. 'x' - Oluşturma modu:
+   - Dosyayı yazma amaçlı açar.
+   - Dosya mevcutsa hata verir.
+   - Dosya mevcut değilse yeni bir dosya oluşturur.
+   - Örnek: `file = open("dosya.txt", "x", encoding="utf-8")`
+
+5. 'b' - Binary modu:
+   - Dosyayı binary (ikili) modda açar.
+   - Genellikle resim, ses gibi ikili dosyalar için kullanılır.
+   - Örnek: `file = open("dosya.txt", "rb")`
+
+6. 't' - Metin modu:
+   - Dosyayı metin modunda açar.
+   - Varsayılan moddur, belirtilmese bile metin modunda açar.
+   - Örnek: `file = open("dosya.txt", "rt", encoding="utf-8")`
+
+7. '+' - Okuma ve yazma modu:
+   - Dosyayı hem okuma hem de yazma amaçlı açar.
+   - Mevcut dosya üzerinde okuma ve yazma işlemlerine izin verir.
+   - Örnek: `file = open("dosya.txt", "r+", encoding="utf-8")`
+
+# Örnek Kullanım
+```python
+# Dosyayı okuma ve yazma modu ile açma
+with open("ornek.txt", "r+", encoding="utf-8") as file:
+    content = file.read()
+    file.write("\nYeni bir satır")

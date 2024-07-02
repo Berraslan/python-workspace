@@ -13,6 +13,6 @@ r+ : hem okuma hem yazma modunda açılır.Eğer dosya konumda yoksa hata verir 
 """
 
 
-with open("dosya.txt","a",encoding="utf-8") as file:
+with open("txt/dosya.txt", "a", encoding="utf-8") as file:
     file.seek(0)
     file.write("ikinci satır\n")
