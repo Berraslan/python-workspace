@@ -1,0 +1,37 @@
+#Hata Türleri
+"""
+ZeroDivisionError = > 10/0 bir bölme hatasıdır
+
+ValueError = x+y toplamında y'ye değer olarak 12a gibi bişey atamak valueError'dür
+
+SyntaxError => yazım yanlışı
+int x ;; iki tane noktalı virgül tanımladık
+def(( : parantezlerde sorun var
+
+NameError
+print(ad) => ad değişkeni tanımlanmadan çağrılıyor
+
+TypeError => Hatalı parametre kullanımından kaynaklanır
+len(10) hata verir çünkü len() fonkisyonu string bir yapının karakter uzunluğunu veririr ama biz burada int vermişiz
+10+'a' => int ile str toplanamaz
+
+IndexError => yanlış index kullanınımı
+liste =[10] tek bir tane elemanı olan liste'mizde
+1.indexte elaman yokken liste[1] dersek list index out of range aralık dışı index tuşlaması hatası alırız
+
+
+KeyError => key hatası
+a={"name": "Berra"}
+a=["ad"] #discitonay içinde olamayan key'e erişme hatası
+
+AttributeError => olmayan bir özelliğe ulaşmak istediğimizde böyle bir hata alırız
+"merhaba".upper() -> bu kod çalışır sting bir değeri upper metodu ile büyütmeyi talep ediyoruz
+"merhaba".Upper() -> merhaba string'i Upper() adında herhangi bir attribute sahip değildir
+
+"""
+
+
+
+
+
+
