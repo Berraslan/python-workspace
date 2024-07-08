@@ -4,4 +4,4 @@
 x=10
 
 if x>5:
-    raise ValueError("x 5'den büyük olamaz")#tamamen faarazi bizim ürettiğimiz bir hata ile karşılasın dediğimizde raise kullanırız. ValueError aslında Exception sınıfına aittir ve ValueError aslında Exception sınıfından kalıtım almıştır.
+    raise ValueError("x 5'den büyük olamaz")#tamamen farazi bizim ürettiğimiz bir hata ile karşılasın dediğimizde raise kullanırız. ValueError aslında Exception sınıfına aittir ve ValueError aslında Exception sınıfından kalıtım almıştır.

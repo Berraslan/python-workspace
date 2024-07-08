@@ -21,8 +21,8 @@
 #        sonuc = float(sayi)
 #        print(f"girilen sayi : {sayi}")
 #     except ValueError:
-#         print("geçersiz sayı giridniz")
-#         continue#contunie programın devam etmesini sağlar ki doğru sonuç alana kadar dönsün program
+#         print("geçersiz sayı girdiniz")
+#         continue #contunie programın devam etmesini sağlar ki doğru sonuç alana kadar dönsün program
 
 #soru3 Dictionary ve key bilgilerini parametre olarak alan get(dict,key) fonksiyonu hazırlayınız.
 # urun={"urunAdi":"samsung s20","fiyat":10000}

@@ -25,7 +25,6 @@ blokları  içine yazılan kodlar sayesinde eğer kod bir hata ile karşılaşı
 #
 
 #try except kullanarak aynı kodu yazalım
-
 try :
     x = int(input("X: "))
     y = int(input("Y: "))
