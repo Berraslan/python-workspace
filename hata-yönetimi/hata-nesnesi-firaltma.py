@@ -1,5 +1,6 @@
-#kendi hata sınırlarımızı çizmek
+#kendi hata sınırlarımızı çizmek '.'n hata nesnesini raise ile oluştururuz
 #eğer bizim tanımladığımız çerçevede birşeyler gerçekleşiyorsa buna uygun şu hata nesnesini fırlat demektir
+#ValueError,TypeError gibi error'ler Exception sınıfından kalıtım(miras) almıştır.
 
 x=10
 

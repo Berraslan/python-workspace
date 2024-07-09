@@ -1,0 +1,5 @@
+
+
+Modül: Bir modül, Python dosyasıdır (örneğin, .py uzantılı bir dosya). Modüller, fonksiyonlar, sınıflar ve değişkenler içerebilir.
+
+Paket: Bir paket, ilgili modülleri (kod dosyaları) bir araya getiren bir yapıdır. Paketler, modüllerin gruplandırılmasını ve daha büyük projelerde düzenli bir şekilde kullanılmasını sağlar.

@@ -1,0 +1,3 @@
+module1 (db-database) : urunler bunu içine eklenecek database'imiz
+modul2 (methods) : urunEkle(), urunGuncelle(), urunleriGetir() metodlar burada tanımlanacak
+modul3 (app): app bizim ana programımız tüm yapıları burada çağırıp çlaıştıracağız
