@@ -1,3 +1,6 @@
+#app.py dosyamız ise ana main dosyamızdır diğer modüller aslında burada kargaşıklık olmasın hepsi tek bir sayfada yer almasın diye yapıldı burada sadece proje materyallerini çağırıp aksiyon alırız
+#burada çok kod yazılmaz.
+
 from methods import *
 from db import *
 
@@ -11,7 +14,12 @@ from db import *
 # for  i in sonuc:
 #     print(i["urunAdi"])
 
-urunGuncelle(1,"iphone 16",90000)
+# urunGuncelle(1,"iphone 16",90000)
+#
+# for i in urunleriGetir():
+#     print(i["urunAdi"])
 
-for i in urunleriGetir():
-    print(i["urunAdi"])
+sonuc = urunleriSil(1)
+
+for i in urunler:
+    print(i)

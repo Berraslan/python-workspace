@@ -1,0 +1,1 @@
+#3.parti firma ve şahısların modullerini kullanmamız işimizi kolaylaştırır bu durumda bu modulleri programımıza dahil etmek için pip komutu kullanılır

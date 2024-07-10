@@ -1,4 +1,4 @@
-"""Urunler adında bir listemiz olsun ve bu listenin her bir elemanı bir dictionar olsun"""
+"""Urunler adında bir listemiz olsun ve bu listenin her bir elemanı bir dictionary olsun"""
 urunler = [
 
     {"id":1,"urunAdi":"iphone 15","fiyat":50000},

@@ -1,0 +1,61 @@
+
+Python ile ;
+
+WEB GELİŞTİRME : MUTLAKA DJANGO VEYA FLASK FRAMEWORKLERİNDEN BİRİNİ KULLANMALISIN
+
+HİKAYEMİZ ŞÖYLE;
+WEB GELİŞTİRME WEB TASARIMI DEĞİLDİR.DJANGO VE FLASK DİNAMİK GELİŞTİRME SAĞLAR NE DEMEK DİNAMİKLİK VERİTABANI KULLANIMIDIR EĞER VERİLER CANLI OLARAK VERİTABABNIDAN GELİYORSA SENİN PROJEN DİNAMİKTİR
+VERİTABANINDAN PROJEYE VERİ GETİRMEK İSE BİR SERVICE İLE OLUR BİR SERVİS YAZMAK İÇİN BİR WEB FRAMEWORK'Ü KULLANILARAK TASARLANIR.
+
+AYRICA WRB SERVİSLER BİR MİMARİYE GÖRE GELİŞTİRİLİR BU MİMAMRİNİN ADI RESTFULL'DUR.
+WEB SERVİSLER MUTLAKA ÖĞRENİLMELİ ÇÜNNKÜ NE YAPARSAN YAP MOBİL UYGULAMA,YAPAY ZEKA,DESKTOP,WEB UYGULMAMASI NE YAPASAN YAP VERİYİ SANA GETİRECEK OLANA WEB SERVİSTİR VE WEB SERVİS WEB FRAMEWORK İLE YAZILIR.
+
+
+hatta veritabanı ile iletişim kurmak için bir web seervise ihtiyaç vardır ayrıca kurduğumuz bu iletişimden aldığımız veriyi gerekli mobil uyg veya web uyg veya yapay zekaya götürecek yine bir web servisi gerekiyor.
+
+
+Türlerine Göre Arayüzler
+Kullanıcı Arayüzü (User Interface - UI):
+
+Kullanıcı arayüzü, insanların bir yazılım veya cihaz ile etkileşime geçmesini sağlar. Genellikle görsel öğelerden (butonlar, menüler, pencereler) oluşur.
+Örnek: Web siteleri, mobil uygulamalar, masaüstü uygulamaları, ATM makineleri.
+Programlama Arayüzü (Programming Interface):
+
+Programlama arayüzü,PROGRAMLAR BİRBİRLERİ İLE İLETİŞİME GEÇMEK İÇİM API'LERİ KULLANIR yazılım bileşenlerinin birbiriyle etkileşime geçmesini sağlar. Bu, bir API (Application Programming Interface) veya dildeki belirli arayüz kavramı olabilir.
+Örnek: Java arayüzleri, Python ABC (Abstract Base Classes), RESTful API'ler, SOAP API'ler.
+
+Kullanıcı Arayüzü (UI)
+Grafik Kullanıcı Arayüzü (Graphical User Interface - GUI)
+GUI, kullanıcıların grafik öğeler (butonlar, ikonlar, menüler) kullanarak yazılım ile etkileşimde bulunmasını sağlar.
+
+Örnekler:
+
+Web Siteleri: HTML, CSS, JavaScript kullanarak oluşturulan web sayfaları.
+Mobil Uygulamalar: Android veya iOS uygulamaları.
+Masaüstü Uygulamaları: Windows, macOS veya Linux için yazılmış uygulamalar.
+Komut Satırı Arayüzü (Command Line Interface - CLI)
+CLI, kullanıcıların metin tabanlı komutlar kullanarak yazılım ile etkileşimde bulunmasını sağlar.
+
+Örnekler:
+
+Terminal veya Komut İstemi: Linux, macOS terminali veya Windows komut istemi.
+PowerShell: Windows PowerShell.
+Programlama Arayüzü (API)
+API, farklı yazılım bileşenlerinin birbirleriyle iletişim kurmasını sağlar. API'ler, belirli işlevleri gerçekleştirmek için kullanılacak yöntemler, veri yapıları ve kurallar kümesini tanımlar.
+
+Web API'ler
+Web API'ler, HTTP protokolü üzerinden çalışan API'lerdir. Genellikle RESTful veya SOAP tabanlıdır.
+
+Örnekler:
+
+RESTful API: JSON veya XML kullanarak veri alışverişi yapılan, HTTP metodlarına (GET, POST, PUT, DELETE) dayalı API'ler.
+SOAP API: XML tabanlı iletişim protokolü kullanan, daha karmaşık ve sıkı bir yapıya sahip API'ler.
+
+
+
+NORMALDE WEB VEYA MOBİL VEYA DESKTOP uygulamaları db ile direk iletişimde kurabilir arada servise olmadan ama bu sefer her platform için db erişim kodlarını elle yazmak lazım ama bir
+db erb servis yazıp db erişim kodlarını buraya yazarsak ister mobil,desktop,web tek bir yerden tek seferde db erişebilir
+
+web frameworkü ile db ile iletişm kurma işlemi back-end işlemidir.
+
+web,mobil,desktop arayüz tasarımı yapmak ise front-end işlemidir.

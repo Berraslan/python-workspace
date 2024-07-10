@@ -1,3 +1,5 @@
+#method dosyamızda projenin yapamacağı işler yani methodlar vs bulunur
+
 import db
 
 def urunEkle(urunAdi,fiyat): #dışarıdan parametre olarak urunAdi ve fiyat bilgisi alacak bir fonkdiyondur ve db'deki urunler listesine eklicek alınan parametreleri
@@ -16,3 +18,8 @@ def urunGuncelle(id,urunAdi,fiyat):
 #parametre almaz db içindeki urunleri return eder
 def urunleriGetir():
     return db.urunler
+
+def urunleriSil(id):
+    for urun in db.urunler:
+        if(urun["id"]==id):
+            db.urunler.remove(urun)#urun geçici değişkeni parametre olarak id'yi bulunca db.urunler'e ılsş ve remove ile o urunu sil
